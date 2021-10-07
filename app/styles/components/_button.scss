@@ -1,0 +1,31 @@
+.btn-orange-brand {
+    border-radius: 150px;
+    background-color: $orange_brand;
+    padding: 13px 18px 13px;
+    color: $white;
+    font-size: 16px;
+    transition: all .3s;
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+        background-color: darken( $orange_brand, 10% )
+    }
+    
+}
+
+.btn-orange-brand-content {
+    border-radius: 150px;
+    background-color: $orange_brand;
+    padding: 18px 35px 19px 35px;
+    color: $white;
+    font-size: 16px;
+    transition: all .3s;
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+        background-color: darken( $orange_brand, 10% )
+    }
+    
+}

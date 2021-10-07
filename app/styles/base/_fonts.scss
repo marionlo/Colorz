@@ -1,0 +1,15 @@
+
+.text {
+    &-2xl {
+        font-size:1.5rem;
+        line-height: 1.875rem;
+        font-family: $medium-font;
+} &-base {
+    font-size:1rem;
+        line-height: 1.25rem;
+        font-family: $regular-font; 
+        &-medium {
+            font-family: $medium-font; 
+        }
+}
+}

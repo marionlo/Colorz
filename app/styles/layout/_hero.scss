@@ -1,0 +1,21 @@
+.hero {
+    padding-top: 1.875rem;
+    color: $dark;
+}
+
+.hero-nav__item-link {
+    color: $dark;
+
+    &:hover {
+        color: $orange-brand;
+        text-decoration: none;
+    }
+}
+
+.hero-nav {
+    @include sm {
+        padding-left: 6.5rem !important;
+        padding-right: 6.5rem !important;
+      }
+}
+
