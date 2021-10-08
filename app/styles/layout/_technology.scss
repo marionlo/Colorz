@@ -1,0 +1,28 @@
+.technology {
+    overflow: hidden;
+    padding-bottom: 20px;
+
+    @include lg {
+        padding-bottom: 53px;
+    }
+}
+
+.technology-desc {
+    padding-left: 36px;
+    padding-right: 36px;
+
+    &__title {
+        padding-left: 50px;
+        padding-right: 50px;
+
+        @include lg {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    @include lg {
+        padding-left: 104px;
+        padding-right: 104px;
+    }
+}

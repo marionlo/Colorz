@@ -1,9 +1,9 @@
 .intro {
     padding: 50px 36px 80px 36px;
-    max-width: 813px;
+    max-width: 850px;
 
     @include md {
-        padding: 90px 36px 80px 36px;
+        padding: 90px 36px 60px 36px;
     }
 
     &__cta {
