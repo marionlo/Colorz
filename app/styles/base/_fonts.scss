@@ -12,6 +12,14 @@ body {
             &-medium {
                 font-family: $medium-font; 
             }
+            @include md {
+                &-lg {
+                    font-size: 1.375rem;
+                    line-height: 2.125rem;
+                    font-family: $medium-font;  
+                }
+                }
+            
         }
     &-2xl {
         font-size:1.5rem;
