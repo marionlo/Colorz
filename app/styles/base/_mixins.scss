@@ -26,6 +26,13 @@
     }
  }
 
+  // Extra large devices
+  @mixin xxl {
+    @media (min-width: #{$screen-xxl-min}) {
+        @content;
+    }
+ }
+
 
  // Typography
  @mixin font($font-family, $font-file) {
@@ -42,7 +49,8 @@
   }
 
   
-  @include font('Helvetica Neue Light', '../assets/fonts/Helvetica-Neue-200-Light');
+  @include font('Helvetica Neue Extra Light', '../assets/fonts/Helvetica-Neue-200-Extra-Light');
+  @include font('Helvetica Neue Light', '../assets/fonts/Helvetica-Neue-300-Light');
   @include font('Helvetica Neue Regular', '../assets/fonts/Helvetica-Neue-400-Regular');
   @include font('Helvetica Neue Medium', '../assets/fonts/Helvetica-Neue-500-Medium');
   @include font('Helvetica Neue Bold', '../assets/fonts/Helvetica-Neue-700-Bold');
