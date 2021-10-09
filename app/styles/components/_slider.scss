@@ -1,0 +1,22 @@
+    .carousel-indicators {
+        
+
+        @include lg {
+            padding-bottom: 16px;
+        }
+
+        & .active {
+            background-color: $dark;
+        }
+    }
+    
+    .carousel-indicators li {
+        width: 8px;
+        height: 8px;
+        background-color: $white;
+        opacity: 1;
+        margin-right: 10px;
+        margin-left: 10px;
+        border-radius: 50%;
+        
+    }
