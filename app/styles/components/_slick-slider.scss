@@ -1,0 +1,23 @@
+#slick {
+
+    .slick-list {
+      margin: {
+        left: -15px;
+        right: -15px;
+      }
+    }
+  
+    .slick-slide {
+      padding-right: 18px;
+      padding-left: 18px;
+  
+      &:focus {
+        outline: none;
+      }
+
+      @include lg {
+        padding-right: 10px;
+        padding-left: 10px;  
+      }
+    }
+  }

@@ -1,0 +1,53 @@
+.accessories {
+    padding-top: 50px;
+
+    @include md {
+        padding-top: 100px;
+    }
+
+    &__row {
+        max-width: 1232px;
+        padding-top: 40px;
+        @include md {      
+            padding-top: 73px;
+        }
+    }
+
+    &__image {
+        max-height: 209px;
+        max-width: 209px;
+    
+        @include md {
+        max-height: 315px;
+        max-width: 315px;
+        }
+    }
+
+    &__card {
+        padding-top: 24px;
+        min-height: 368px;
+        text-align: center;
+        align-items: center;
+    
+        @include md {
+            min-height: 514px;
+        }
+    }
+
+    &__body {
+        padding: 0.5rem 0 0 0;
+        @include lg {
+            padding: 4rem 0 0 0;
+        }
+    }
+
+    &__title {
+        @include md {      
+            max-width: 850px;
+        }
+    }
+}
+
+
+
+
