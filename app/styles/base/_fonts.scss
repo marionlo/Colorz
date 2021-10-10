@@ -37,6 +37,11 @@ body {
         line-height: 1.875rem;
         font-family: $medium-font;
     }  
+    &-md {
+        font-size: 1.875rem;
+        line-height: 2.625rem;
+        font-family: $medium-font;
+    }
     &-lg {
         font-size: 1.375rem;
         line-height: 2.125rem;

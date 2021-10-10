@@ -1,0 +1,49 @@
+.testimonies {
+    background-color: $light-grey;
+    line-height: 0;
+
+
+    &__carousel {
+        background-color: $orange-brand;
+        color: $white;
+        height: 274px;
+
+        @include md {
+            height: 400px;
+        }
+    }
+
+    &__indicators {
+    background-color: $orange-brand;
+    margin-right: 0;
+    margin-left: 0; 
+    }
+
+    &__title {
+        max-width: 500px;
+
+        @include md {
+            max-width: 800px;
+        }
+    }
+    &__intro {
+        padding-top: 50px;
+
+        @include md {
+            padding-top: 87px;
+        }
+    }
+
+    &__btn {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        @include md {
+            margin-bottom: -30px;
+
+        }
+    }
+}
+
+
+
