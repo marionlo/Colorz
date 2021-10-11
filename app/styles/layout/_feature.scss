@@ -1,31 +1,30 @@
 .feature {
-    line-height: 0;
-    padding-bottom: 60px;
+	line-height: 0;
+	padding-bottom: 60px;
 
-    @include lg {
-        padding-bottom: 0px;
-    }
-    
-    &__content {
-        padding: 30px 36px 0 36px;
+	@include lg {
+		padding-bottom: 0px;
+	}
 
-        @include lg {
-            padding: 0px 104px 0 50px;
-        }
+	&__content {
+		padding: 30px 36px 0 36px;
 
-        @include xl {
-            padding: 0px 104px 0 124px;
-        }
-    }
+		@include lg {
+			padding: 0px 104px 0 50px;
+		}
 
-    &__picto {
-        width: 33.44px;
-        height: 35px;
+		@include xl {
+			padding: 0px 104px 0 124px;
+		}
+	}
 
-        @include lg {
-        width: 43px;
-        height: 45px;
-        }
-    }
-    
+	&__picto {
+		width: 33.44px;
+		height: 35px;
+
+		@include lg {
+			width: 43px;
+			height: 45px;
+		}
+	}
 }

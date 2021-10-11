@@ -1,113 +1,110 @@
 .hero {
-    padding-top: 1.875rem;
-    color: $dark;
-    background-image: url("../assets/images/hero_mobile.png");
-    min-height: 859px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+	padding-top: 1.875rem;
+	color: $dark;
+	background-image: url("../assets/images/hero_mobile.png");
+	min-height: 859px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-    @include md {
-        background-image: url("../assets/images/hero.png"); 
-        min-height: 1564px;
-    }
+	@include md {
+		background-image: url("../assets/images/hero.png");
+		min-height: 1564px;
+	}
 }
 
 .hero-nav {
-    @include sm {
-        padding-left: 6.5rem !important;
-        padding-right: 6.5rem !important;
-      }
+	@include sm {
+		padding-left: 6.5rem !important;
+		padding-right: 6.5rem !important;
+	}
 
-      &__item-link {
-        color: $dark;
+	&__item-link {
+		color: $dark;
 
-        &:hover {
-            color: $orange-brand;
-            text-decoration: none;
-        }
-      }
+		&:hover {
+			color: $orange-brand;
+			text-decoration: none;
+		}
+	}
 }
 
 .hero-content-desc {
-    @include sm {
-        max-width: 1052px;
-      }
+	@include sm {
+		max-width: 1052px;
+	}
 
-      &__catchphrase {
-        color: $orange-brand;
-        padding: 40px 0 10px 0;
-    
-        @include md {
-            padding: 115px 0 20px 0;
-          }
-      }
-    
+	&__catchphrase {
+		color: $orange-brand;
+		padding: 40px 0 10px 0;
+
+		@include md {
+			padding: 115px 0 20px 0;
+		}
+	}
 }
 
-
 .hero-content-offer {
-    background-color: $orange-brand;
-    color: $white;
-    border-radius: 50%;
-    width: 154.33px;
-    height: 154.33px;
-    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
-    transform: rotate(11.56deg);
-    left: 200px;
-    top: 720px;
+	background-color: $orange-brand;
+	color: $white;
+	border-radius: 50%;
+	width: 154.33px;
+	height: 154.33px;
+	box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25);
+	transform: rotate(11.56deg);
+	left: 200px;
+	top: 720px;
 
-    @include md {
-        width: 227.24px;
-        height: 227.24px;
-        left: 500px;
-        top: 720px;
-      }
+	@include md {
+		width: 227.24px;
+		height: 227.24px;
+		left: 500px;
+		top: 720px;
+	}
 
-      @include xl {
-        width: 227.24px;
-        height: 227.24px;
-        left: 900px;
-        top: 720px;
-      }
+	@include xl {
+		width: 227.24px;
+		height: 227.24px;
+		left: 900px;
+		top: 720px;
+	}
 
-      @include xxl {
-        width: 227.24px;
-        height: 227.24px;
-        left: 1110px;
-        top: 570px;
-      }
+	@include xxl {
+		width: 227.24px;
+		height: 227.24px;
+		left: 1110px;
+		top: 570px;
+	}
 
-      &__price {
-        font-size: 1.813rem;
-        line-height: 2.188rem;
-        font-family: $bold-font;
-        
-        @include md {
-            font-size: 2.75rem;
-            line-height: 3.375rem;
-        }
-    }
+	&__price {
+		font-size: 1.813rem;
+		line-height: 2.188rem;
+		font-family: $bold-font;
 
-    &__title {
-        font-size: 0.75rem;
-        line-height: 1.2rem;
-        font-family: $light-font;
-        
-        @include md {
-            font-size: 1.188rem;
-            line-height: 1.438rem;
-        }
-    }
-    &__deal {
-        font-size: 0.625rem;
-        line-height: 0.75rem;
-        font-family: $light-font;
+		@include md {
+			font-size: 2.75rem;
+			line-height: 3.375rem;
+		}
+	}
 
-        @include md {
-            font-size: 0.938rem;
-            line-height: 1.125rem;
-        }
+	&__title {
+		font-size: 0.75rem;
+		line-height: 1.2rem;
+		font-family: $light-font;
 
-    }
-} 
+		@include md {
+			font-size: 1.188rem;
+			line-height: 1.438rem;
+		}
+	}
+	&__deal {
+		font-size: 0.625rem;
+		line-height: 0.75rem;
+		font-family: $light-font;
+
+		@include md {
+			font-size: 0.938rem;
+			line-height: 1.125rem;
+		}
+	}
+}

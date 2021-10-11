@@ -1,17 +1,16 @@
 .catchphrase {
-    padding-top: 52px;
-    padding-bottom: 20px;
+	padding-top: 52px;
+	padding-bottom: 20px;
 
-    @include md {
-        padding: 90px 0 90px 0;
-       
-    }
+	@include md {
+		padding: 90px 0 90px 0;
+	}
 
-    &__title {
-        color: $orange-brand;
+	&__title {
+		color: $orange-brand;
 
-        @include md {
-            padding-top: 17px;
-        }
-    }
+		@include md {
+			padding-top: 17px;
+		}
+	}
 }

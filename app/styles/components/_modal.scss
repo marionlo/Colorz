@@ -8,20 +8,19 @@
     line-height: 34px;
     font-family: $regular-font;
     padding: 40px 158px 82px 158px;
-    }
-    
+    }   
 }
 
 .modal-dialog {
     @include xl {
         max-width: 910px;
-    }
-    
+    }   
 }
 
 .modal-header .close {
     margin: -1rem 1rem -1rem auto;
 }
+
 .close {
     color: $dark;
     font-size: 2rem;  
