@@ -1,21 +1,20 @@
+@import "base/_variables.scss";
+@import "base/_mixins";
+@import "base/_breakpoints";
+@import "base/_fonts";
+@import "base/_reset";
+@import "base/_global";
 
-@import 'base/_variables.scss';
-@import 'base/_mixins';
-@import 'base/_breakpoints';
-@import 'base/_fonts';
-@import 'base/_reset';
-@import 'base/_global';
+@import "layout/_hero";
+@import "layout/_intro";
+@import "layout/_technology";
+@import "layout/_catchphrase";
+@import "layout/_feature";
+@import "layout/_testimonies";
+@import "layout/_accessories";
+@import "layout/_footer";
 
-@import 'layout/_hero';
-@import 'layout/_intro';
-@import 'layout/_technology';
-@import 'layout/_catchphrase';
-@import 'layout/_feature';
-@import 'layout/_testimonies';
-@import 'layout/_accessories';
-@import 'layout/_footer';
-
-@import 'components/_button';
-@import 'components/_slider';
-@import 'components/_slick-slider';
-@import 'components/_modal';
+@import "components/_button";
+@import "components/_slider";
+@import "components/_slick-slider";
+@import "components/_modal";

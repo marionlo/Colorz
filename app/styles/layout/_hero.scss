@@ -1,14 +1,14 @@
 .hero {
 	padding-top: 1.875rem;
 	color: $dark;
-	background-image: url("../assets/images/hero_mobile.png");
+	background-image: url("../images/hero_mobile.png");
 	min-height: 859px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 
 	@include md {
-		background-image: url("../assets/images/hero.png");
+		background-image: url("../images/hero.png");
 		min-height: 1564px;
 	}
 }

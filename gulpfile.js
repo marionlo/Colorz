@@ -1,4 +1,4 @@
-// generated on 2021-10-06 using generator-webapp 4.0.0-8
+// generated on 2021-10-11 using generator-webapp 4.0.0-8
 const { src, dest, watch, series, parallel, lastRun } = require('gulp');
 const gulpLoadPlugins = require('gulp-load-plugins');
 const browserSync = require('browser-sync');
@@ -36,7 +36,7 @@ function styles() {
 };
 
 function scripts() {
-  return src('app/scripts/**/*.js', {
+  return src('app/scripts/*.js', {
     sourcemaps: !isProd,
   })
     .pipe($.plumber())
@@ -56,7 +56,7 @@ const lintBase = (files, options) => {
     .pipe($.if(!server.active, $.eslint.failAfterError()));
 }
 function lint() {
-  return lintBase('app/scripts/**/*.js', { fix: true })
+  return lintBase('app/scripts/*.js', { fix: true })
     .pipe(dest('app/scripts'));
 };
 function lintTest() {
@@ -141,7 +141,7 @@ function startAppServer() {
   ]).on('change', server.reload);
 
   watch('app/styles/**/*.scss', styles);
-  watch('app/scripts/**/*.js', scripts);
+  watch('app/scripts/*.js', scripts);
   watch('app/fonts/**/*', fonts);
 }
 
@@ -160,7 +160,7 @@ function startTestServer() {
   });
 
   watch('test/index.html').on('change', server.reload);
-  watch('app/scripts/**/*.js', scripts);
+  watch('app/scripts/*.js', scripts);
   watch('test/spec/**/*.js', lintTest);
 }
 

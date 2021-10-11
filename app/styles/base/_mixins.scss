@@ -48,12 +48,12 @@
   }
 
   
-  @include font('Helvetica Neue Extra Light', '../assets/fonts/Helvetica-Neue-200-Extra-Light');
-  @include font('Helvetica Neue Light', '../assets/fonts/Helvetica-Neue-300-Light');
-  @include font('Helvetica Neue Regular', '../assets/fonts/Helvetica-Neue-400-Regular');
-  @include font('Helvetica Neue Medium', '../assets/fonts/Helvetica-Neue-500-Medium');
-  @include font('Helvetica Neue Bold', '../assets/fonts/Helvetica-Neue-700-Bold');
-  @include font('Helvetica Neue Extra Bold', '../assets/fonts/Helvetica-Neue-800-Extra-Bold');
+  @include font('Helvetica Neue Extra Light', './fonts/Helvetica-Neue-200-Extra-Light');
+  @include font('Helvetica Neue Light', '../fonts/Helvetica-Neue-300-Light');
+  @include font('Helvetica Neue Regular', '../fonts/Helvetica-Neue-400-Regular');
+  @include font('Helvetica Neue Medium', '../fonts/Helvetica-Neue-500-Medium');
+  @include font('Helvetica Neue Bold', '../fonts/Helvetica-Neue-700-Bold');
+  @include font('Helvetica Neue Extra Bold', '../fonts/Helvetica-Neue-800-Extra-Bold');
 
 
 
