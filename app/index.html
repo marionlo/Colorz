@@ -18,14 +18,14 @@
     <link rel="stylesheet" href="styles/main.css" />
   </head>
   <body>
-    <section class="hero position-relative">
+    <section class="hero position-relative" data-target="#hero">
       <nav class="hero-nav d-lg-flex justify-content-lg-between align-content-center px-0">
         <h1 class="hero-nav__logo text-center text-2xl">Vision.R</h1>
         <ul class="hero-nav__menu d-none d-lg-flex text-base-medium">
           <li class="hero-nav__item nav-link"><a href="#" class="hero-nav__item-link">Low solution</a></li>
           <li class="hero-nav__item nav-link"><a href="#" class="hero-nav__item-link">Low Technology</a></li>
           <li class="hero-nav__item nav-link"><a href="#" class="hero-nav__item-link">High Price</a></li>
-          <li class="hero-nav__btn nav-link"><a href="#" class="hero-nav__item-link btn-orange-brand">Buy it</a></li>
+          <li class="hero-nav__btn nav-link" data-toggle="modal" data-target="#modal"><a href="#hero" class="hero-nav__item-link btn-orange-brand">Buy it</a></li>
         </ul>
       </nav>
       <div class="hero-content">
@@ -44,7 +44,7 @@
       </div>
     </section>
 
-    <section class="intro d-flex flex-column text-center mx-auto">
+    <section class="intro d-flex flex-column text-center mx-auto" data-target="#intro">
       <p class="intro__text text-base text-base-lg text-center d-md-none">Vision.R with a grand “R” like in the mot “Revolution” !
         You are afraid to feel déstabilized with the futur retour au bureau ? 
         With Vision.R, be rassuré.e.s ! Get instant, real time, high resolution, social videocall and feel comme à la maison. Bref, get ready to faire un carton !</p>
@@ -53,8 +53,8 @@
         <p class="intro__text text-base text-base-lg text-center d-none d-md-flex mx-auto"> You are afraid to feel déstabilized with the futur retour au bureau ? </p>
         <p class="intro__text text-base text-base-lg text-center d-none d-md-flex mx-auto">
               With Vision.R, be rassuré.e.s ! Get instant, real time, high resolution, social videocall and feel comme à la maison. Bref, get ready to faire un carton !</p>
-      <div class="intro__cta">
-        <a href="#" class="intro__link btn-orange-brand-content">Buy it now</a>
+      <div class="intro__cta" data-toggle="modal" data-target="#modal">
+        <a href="#intro" class="intro__link btn-orange-brand-content">Buy it now</a>
       </div>
     </section>
 
@@ -114,14 +114,12 @@
       </div>
     </section>
 
-
-
-
-
-    <section class="testimonies slider">
+    <section class="testimonies slider" data-target="#testimonies">
       <div class="testimonies__intro d-flex flex-column justify-content-normal justify-content-md-center text-center mx-auto align-items-center">
         <h2 class="testimonies__title text-md text-xxl px-4">Whatever your style, you will forcément find your bonheur</h2>
-        <div class="testimonies__btn"><a href="#" class="testimonies__btn-link btn-orange-brand-content">Choose your Vision.R</a></div>
+        <div class="testimonies__btn" data-toggle="modal" data-target="#modal">
+          <a href="#testimonies" class="testimonies__btn-link btn-orange-brand-content">Choose your Vision.R</a>
+        </div>
       </div>
       <div class="testimonies__images row justify-content-between flex-nowrap mx-0 align-items-end">
         <div class="testimonies__image-container "><img src="../assets/images/multiple_finish_3.png" alt="#" class="testimonies__image-left img-fluid w-100"></div>
@@ -229,12 +227,34 @@
           <p class="footer__phone text-base">+33 (0)1 82 83 83 60</p>
           <p class="footer__email text-base">hello@colorz.fr</p>
         </div>
-
         <div class="footer__stamp-container col-lg-3 text-lg-right text-left ">
           <img src="../assets/images/logo_created_to_create.png" alt="Logo Created to Create" class="footer__stamp">
         </div>
       </div>
     </footer>
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0">
+       
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body text-center">
+        <div class="modal__image-container">
+          <img src="../assets/images/monkey.png" alt="Laughing monkey emoji" class="modal__image my-2">
+        </div>
+        <h5 class="text-lg text-lg-sub my-3">Vous y avez (vraiment?) cru ?</h5>
+        <p class="my-3">En tout cas, on espère que ça vous a fait sourire, parce qu’on en a bien besoin en ce moment. <strong>Et sinon, vous avez sûrement des produits plus intéressants à vendre.</strong></p>
+        <p class="my-3">Ça tombe bien, nos équipes sont plus fortes en communication digitale qu’en innovations en carton.</p>
+      </div>
+     
+    </div>
+  </div>
+</div>
 
 
     <script
