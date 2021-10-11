@@ -1,0 +1,31 @@
+.footer {
+    background-color: $light-grey;
+    padding: 60px 36px 60px 36px;
+
+    @include lg {
+        padding: 86px 104px 86px 104px;
+    }
+
+    &__logo-container {
+        padding-bottom: 30px;
+
+        @include lg {
+            padding-bottom: 44px;
+        }
+    }
+
+    &__location {
+        padding-bottom: 20px;
+        @include lg {
+            padding-bottom: 0;
+        }
+    }
+
+    &__contact {
+        padding-bottom: 30px;
+
+        @include lg {
+            padding-bottom: 0;
+        }
+    }
+}
